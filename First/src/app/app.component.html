@@ -1,0 +1,15 @@
+<h1>Hello {{world}}</h1>
+<ul>
+  <li *ngFor="let user of users">
+    {{user}}
+  </li>
+</ul>
+
+<input type="text" name="user" #username>
+<button (click)="addUser(username.value)">Add</button>
+
+<br/>
+
+<h2>Calculator</h2>
+
+<app-calc></app-calc>
